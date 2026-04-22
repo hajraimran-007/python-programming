@@ -1,4 +1,3 @@
-#1
 #Print numbers from 1 to 10 using a loop.
 for i in range(1,11):
     print("number from 1 to 10", i)
@@ -8,8 +7,10 @@ for even in range(2,21,2):
     print("even numbers are:", even)
 
 #Take a number from user and print its multiplication table (e.g., 5 → 5×1=5 … 5×10=50). 
-for i in range(1,11):
-   print(i*5)
+n = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(n, "x", i, "=", n * i)
 
  #Calculate the sum of numbers from 1 to n (user input).
 n = int(input("Enter number for sum: "))
@@ -32,9 +33,9 @@ odd=0
 
 for n in numbers:
     if n % 2 == 0:
-       even=even+1
+       even+=1
     else:
-        odd=odd+1
+        odd+=1
 
 print("even",even)
 print("odd",odd)
@@ -65,26 +66,20 @@ for row in range(5):
         print("*",end=" ")
     print()
 
-#Reverse a number (e.g., 123 → 321).    
+# Print different pattern:   
 for row in range(5):
    for col in range(row+1):
        print("*", end=" ")
    print() 
 #everse a number (e.g., 123 → 321).
-n=(input("enter num"))
-print("reversed",n[::-1])
-
- # while method
-n = int(input("Enter a number: "))
-
-rev = 0
-
+n=int(input("enter num"))
+rev=0
 while n > 0:
     digit = n % 10
     rev = rev * 10 + digit
     n = n // 10
 
-print("Reversed number:", rev) 
+print("reversed",rev)
 
 # counting digit
 n=int(input("enter the num:"))
@@ -99,8 +94,8 @@ print("Total digits:", len(n))
 
 #sum all the even number given by user using while loop
 n = int(input("How many numbers: "))
+i=0
 
-i = 1
 even_sum = 0
 
 while i <= n:

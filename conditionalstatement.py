@@ -37,3 +37,24 @@ for key,value in dic.items():
     if value==max_value:
         print("Key with maximum value is:",key)
         break
+#positive,negative or zero.poistive (is even or odd).
+n=int(input("enter num :"))
+if n>0:
+    print("positive")
+    if n%2==0:
+        print("even")
+    else:
+        print("odd")
+else:
+    if n==0:
+        print("zero")
+    else:
+        print("negative")          
+
+#Given a list of numbers, remove all duplicate values without using set().   
+numbers_list=[1,2,3,4,2,5,1]
+unique=[]
+for i in numbers_list:
+    if i not in unique:
+      unique.append(i) 
+    print(unique)     
